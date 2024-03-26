@@ -29,3 +29,11 @@ You can check out the [create-t3-app GitHub repository](https://github.com/t3-os
 Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
 
 this should show up as a change
+
+important commands upon setup to run:
+
+cd something
+npm run db:push
+npm run dev
+git init
+git commit -m "initial commit"
