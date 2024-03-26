@@ -37,3 +37,5 @@ npm run db:push
 npm run dev
 git init
 git commit -m "initial commit"
+
+ThisShouldBeStronger12
