@@ -39,3 +39,13 @@ git init
 git commit -m "initial commit"
 
 ThisShouldBeStronger12
+
+Notes on Routing
+
+When using React their are two types of routing systems that occur. Their is server side routing and client side routing. Server side routing is when the server takes in a request and returns the following javascript and html that was expected from a certain route. Client side routing occurs when you have content already but you want to change a page. Instead of rerendering everything it only fetches the things it needs and the client side handles the routing and how things are displayed.
+[9:51 PM]
+I think a good demonstration of something like this happening is the react-router, vs something like django handling routing.
+
+react router if you hit the refresh button on a page you will be sent a 404 page because that route does not exist on the server, but if you click on the nav button of the website you can get their. That has to deal with the content being sent all at once to the client and then the client displays what is needed for each view.
+[9:53 PM]
+django it you hit a refresh page and page was a valid page your page will always rerender, nomatter what. That is because that is a valid route on the server, but the downside is that client side has no routing system so every page requires a hit to the server which could cause some performance issues depending on what you are doing. Also more resources are needed for each request because you may be sending redundant info like the nav bar
