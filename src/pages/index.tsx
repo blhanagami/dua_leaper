@@ -5,7 +5,8 @@ import { api } from "~/utils/api";
 
 export default function Home() {
   //const hello = api.post.hello.useQuery({ text: "from tRPC" });
-  const {data} = api.post.getLatest.useQuery();
+  //deconstruct this line in detail and line 23
+  const data = api.post.getLatest.useQuery().data;
   return (
     <>
       <Head>
@@ -19,10 +20,10 @@ export default function Home() {
             Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
           </h1>
             <div>
-            {data?.map((post)) => (<div key={post.id}>{post.content}</div>)}
+            {data?.map(({id, content}) => (<div key={id}>{content}</div>))}
             </div>
         </div>
       </main>
     </>
-  );
-}
+  )
+};
