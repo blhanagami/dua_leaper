@@ -19,9 +19,7 @@ export default function Home() {
           <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
             Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
           </h1>
-            <div>
             {data?.map(({id, content}) => (<div key={id}>{content}</div>))}
-            </div>
         </div>
       </main>
     </>

@@ -33,10 +33,13 @@ this should show up as a change
 important commands upon setup to run:
 
 cd something
+npx prisma generate
+npx prisma db pull --force
 npm run db:push
 npm run dev
 git init
 git commit -m "initial commit"
+npx prisma studio - this is to manually add data into the db
 
 ThisShouldBeStronger12
 
